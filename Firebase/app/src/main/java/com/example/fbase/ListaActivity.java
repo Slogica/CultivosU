@@ -40,7 +40,6 @@ public class ListaActivity extends AppCompatActivity {
         usuarioAdapter = new UsuarioAdapter(listaUsuarios);
         recyclerViewUsuarios.setAdapter(usuarioAdapter);
 
-        // Configurar botón "Lista" para ir a la lista de cultivos
         Button volver = findViewById(R.id.volver);
         volver.setOnClickListener(v -> {
             Intent intent = new Intent(ListaActivity.this, MainActivity.class);
